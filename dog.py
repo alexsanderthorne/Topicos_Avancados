@@ -1,7 +1,7 @@
 
 class Meta(type):
     def __new__(self, class_name, bases, attrs):
-        print(attrs)
+       #S print(attrs)
 
         a = {}
         for name, val in attrs.items():
@@ -9,7 +9,7 @@ class Meta(type):
                 a[name] = val
             else:
                 a[name.upper()] = val
-        print(a)
+        #print(a)
         return type(class_name, bases, a)
 
 
