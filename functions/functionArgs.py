@@ -5,7 +5,7 @@ def func_args(*args):
         print(f'tipo: {type(arg)} conteudo: {arg}')
 
 
-func_args(1, 'A', {'valor': 10})
+func_args(1, 'A', {'valor': 10},2, 'B', {'valor': 22})
 
 
 def func_kwargs(**kwargs):
@@ -17,8 +17,11 @@ def func_kwargs(**kwargs):
 parms = {
     'nome' : 'James',
     'sobrenome' : 'Lennister',
-    'cargo' : 'Cavaleiro'
+    'cargo' : 'Cavaleiro',
+    'nome' : 'Alexander',
+    'sobrenome' : 'The great',
+    'cargo' : 'Imperator'
 }
         
 #func_kwargs(nome="Bill", sobrenome="O grande", cargo="pedreiro")
-func_kwargs(**parms)
+#func_kwargs(**parms)
