@@ -25,7 +25,7 @@ maiorNumero = maior(*n)
 def escreveMensagem(mensagem, nome):
     print(f'{mensagem},{nome}')
 
-mensagem = {'mensagem': 'Hello', 'nome': 'joe'}
+mensagem = {'mensagem': 'Hello', 'nome': 'joe ok'}
 
 escreveMensagem(**mensagem)
 
