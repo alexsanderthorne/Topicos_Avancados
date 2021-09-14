@@ -20,9 +20,14 @@ def maior(n1, n2):
 
 n = [4, 9]
 maiorNumero = maior(*n)
-print(maiorNumero)
+#print(maiorNumero)
 
+def escreveMensagem(mensagem, nome):
+    print(f'{mensagem},{nome}')
 
+mensagem = {'mensagem': 'Hello', 'nome': 'joe oko'}
+
+escreveMensagem(**mensagem)
 
 moovies = {'Nome': 'zombie', 'Ano': '1993', 'Nome': 'swat',
            'Ano': '2013', 'Nome': 'transcedence', 'Ano': '2024'}
@@ -33,4 +38,4 @@ def functionMoovies(**extra):
         print(f' {key} : {value}')
 
 
-functionMoovies(**moovies)
+#functionMoovies(**moovies)
