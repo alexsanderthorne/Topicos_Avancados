@@ -17,10 +17,19 @@ class Vetor:
         y = self.y + outro.y
         return Vetor(x, y)
 
+    def __bool__(self):
+        return bool(self.x or self.y)
+    
+    def __float__(self):
+        return float(self.x) + float(self.y)
 
 v = Vetor(3, 5)
 print(v*3)
 
-v1 = Vetor(9, 4)
+v1 = Vetor(0, 0)
 v2 = Vetor(8, 2)
 print(v1+v2)
+
+print(float(v2))
+print(bool(v1))
+print(bool(v2))

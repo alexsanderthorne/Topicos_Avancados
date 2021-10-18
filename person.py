@@ -21,7 +21,7 @@ class Person:
 
 
 p = Person("Sander\n")
-p*4
+p*5
 print(p)
 
 print(len(p))
