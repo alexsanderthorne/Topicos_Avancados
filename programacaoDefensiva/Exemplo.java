@@ -1,7 +1,7 @@
 import java.util.Optional;
 import java.util.Random;
 
-public class exemplo {
+public class Exemplo {
 
     public static String getString() {
         return "OK";
