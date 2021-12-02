@@ -19,9 +19,10 @@ class Vetor:
 
     def __bool__(self):
         return bool(self.x or self.y)
-    
+
     def __float__(self):
         return float(self.x) + float(self.y)
+
 
 v = Vetor(3, 5)
 print(v*3)
